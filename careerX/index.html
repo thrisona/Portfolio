@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio</div>
+                <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#protfolio">Projects</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi!! I am <span>Goparaju Thrisona</span><br>Student at CMRIT Hyderabad</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- --------------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Thrisona.jpeg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hi!! My name is Goparaju Thrisona and I'm from Hyderabad.I am currently pursuing my third year Bachelor of Computer Science Engineering(CSE-AI&ML).I am a Full Stack Web Developer.</p><br>
+                    <h2>Education</h2><br>
+                    <p>Bachelor of Technology,CSE(AI&ML)</p>
+                    <P>CMR Institute of Technology | 2020-2024 | CGPA-8.11</P><hr>
+                    <p>Intermediate</p>
+                    <p>Narayana Junior College | 2018-2020 | CGPA-9.6</p><hr>
+                    <p>Secondary</p>
+                    <p>St.Paul's High School | CGPA-9.2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list"> 
+                <div>
+                    <h2>Technical Skills</h2>
+                        <ul>
+                            <li>C</li><br>
+                            <li>Python</li><br>
+                            <li>Java</li><br>
+                            <li>SQL</li><br>
+                            <li>HTML,CSS</li>
+                        </ul>
+                       
+                </div>
+                <div>
+                    
+                     <h2>Other Skills</h2>
+                     <ul>
+                         <li><a href="#">Logical Thinking</a></li>
+                         <li><a href="#">Problem Solving</a></li>
+                         <li><a href="#">Leadership</a></li> 
+                         <li><a href="#">Communication</a></li>                                       
+                     </ul>
+                 </div>
+                 <div>
+                    <!-- <i class="fab fa-app-store"></i>-->
+                    <h2>Certifications</h2>
+                    <ul>
+                        <li><a href="file:///C:/Users/91998/Downloads/DBMS.pdf">Database Management System</a></li>
+                        <li><a href="file:///C:/Users/91998/Downloads/JAVA.pdf">Java programming</a></li>
+                        <li><a href="file:///C:/Users/91998/Downloads/PYTHON.pdf">Python</a></li>   
+                        <li><a href="file:///C:/Users/91998/Downloads/Certificate...pdf">Nvidia-Deep Learning</a></li> <br>  
+                        <p>[ Click text ]</p>              
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="protfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1><br><br>
+            <p>Crop Yield Prediction and Efficient use of Fertilizers :-</p><br>
+            <p>This project has been developed using Machine Learning algorithms such as K-means,Naive Bayes,KNN,Random Forest and other data mining techniques.The main aim of this project is to predict the crop yield using efficient algorithm.It suggests what kind of soil,weather conditions,fertilizers and other environmental factors are suitable for our required crop. </p><br><br>
+            <img src="Crop.jpg" alt="crop"><img src="data.png" alt="data">
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+           <div class="row">
+               <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1><br>
+                   <p><i class="fas fa-paper-plane"></i>goparajuthrisonanaidu@gmail.com</p>
+                   <p><i class="fa fa-phone-square"></i>8977220134</p>
+                   <div class="social-icons"><br><br>
+                      <a href="https://www.facebook.com/Thrisona/"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/thrisona_goparaju_16/"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/goparaju-thrisona-naidu-b0637b251/"><i class="fab fa-linkedin"></i></a>
+
+                   </div>
+               </div>
+               <div class="contact-right">
+                   <form>
+                       <input type="text" name="Name" placeholder="Your Name" required>
+                       <input type="email" name="email" placeholder="Your Email" required>
+                       <textarea naem="Message" rows="6" placeholder="Your Message"></textarea>
+                       <button type="submit" class="btn btn2">Submit</button>
+                   </form>
+               </div>
+           </div>
+        </div>
+        <div class="copyright">
+        <footer>
+           <p>Copyright © created by Thrisona</p>
+       </footer>
+       </div>
+       </div>
+       
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+         for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+         }
+         for(tabcontents of tabcontents){
+             tabcontents.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> 
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+          sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    
+    </script>    
+    <script src="https://kit.fontawesome.com/8ceb11f307.js" crossorigin="anonymous"></script> 
+    
+</body>
+</html>
+    
+
+
+    
